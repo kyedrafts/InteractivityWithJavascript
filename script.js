@@ -17,6 +17,7 @@ function upDate(previewPic){
 	};
 
 pics.forEach(img => {
+	img.setAttribute('tabindex', "0");
   img.addEventListener('focus', () => upDate(img));
   img.addEventListener('blur', unDo);     
 })
